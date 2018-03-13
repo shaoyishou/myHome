@@ -1,0 +1,168 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body { background:#0c2037;}
+.myhome { min-width:1200px; height:100%; position:relative;}
+
+.main { width:100%; z-index:10; overflow:hidden;}
+
+
+/*主导航部分*/
+.nav_box { width:100%; height:100px; line-height:95px; margin-top:40px; position:relative; z-index:100;}
+.nav { width:1200px; margin:0 auto; opacity:0; filter:alpha(opacity=0); display:none;}
+.nav li { width:150px; height:100px; text-align:center; float:left;}
+.nav a { color:#21cdff; font-size:24px;}
+
+.nav .li2 { margin-right:600px;}
+.nav li.active { text-indent:-999em;}
+.nav .li1.active { background:url(../img/li1_active.png) no-repeat center;}
+.nav .li2.active { background:url(../img/li2_active.png) no-repeat center;}
+.nav .li3.active { background:url(../img/li4_active.png) no-repeat center;}
+.nav .li4.active { background:url(../img/li5_active.png) no-repeat center;}
+
+.logo { width:492px; height:80px; background:url(../img/logo_bg.png) no-repeat; position:absolute; left:50%; top:10px; margin-left:-246px; z-index:100;}
+.logo .logo_opa { width:100%; height:100%; position:absolute; left:0; top:0; background:url(../img/logo_opa.png) no-repeat;}
+.logo img { width:433px; position:absolute; left:50%; top:22px; margin-left:-216px;}
+
+
+
+/*内容区*/
+.con { height:446px; margin:25px auto 0; position:relative; z-index:10; transform:perspective(800px) rotateY(0deg) rotateX(0deg); transform-style:preserve-3d;}
+
+/*主页*/
+.con_main { width:100%; height:100%; position:absolute;}
+/*人*/
+.man_box { width:336px; height:446px; background:url(../img/man_bg.png) no-repeat center top; position:absolute; left:50%; top:0; margin-left:-168px;}
+.man_box .man { width:114px; height:444px; background:url(../img/man.png) no-repeat; margin:0 auto; opacity:0; filter:alpha(opacity=0); transition:1s all ease-out;
+	transform:scale(0);
+	-ms-transform:scale(0);
+	-webkit-transform:scale(0);
+	-o-transform:scale(0);
+	-moz-transform:scale(0);
+}
+.man_box .man_opa { width:336px; height:446px; background:url(../img/man_opa.png) no-repeat; position:absolute; left:0; top:0; opacity:0; filter:alpha(opacity=0);}
+
+/*主页导航*/
+.con_nav { width:1200px; height:100%; position:absolute; left:50%; top:0; margin-left:-600px; z-index:100;}
+.con_nav li { width:330px; height:100px; position:absolute; opacity:0; filter:alpha(opacty=0);}
+.con_nav li a { width:50px; height:50px; text-indent:-999em; position:absolute; border-radius:50%;}
+.con_nav li a:hover { background:#ccc; opacity:0.4; filter:alpha(opacity=40);}
+.index_btn { background:url(../img/index.png) no-repeat; left:-100px; top:250px;}
+.index_btn a { left:90px; top:6px;}
+.works_btn { background:url(../img/works.png) no-repeat; left:-100px; top:80px;}
+.works_btn a { left:72px; top:28px;}
+.skill_btn { background:url(../img/skill.png) no-repeat; left:1000px; top:250px;}
+.skill_btn a { right:93px; top:6px;}
+.contact_btn { background:url(../img/contact.png) no-repeat; left:1000px; top:80px;}
+.contact_btn a { right:89px; top:28px;}
+.index_btn.active { background:url(../img/index_active.png) no-repeat;}
+.works_btn.active { background:url(../img/works_active.png) no-repeat;}
+.skill_btn.active { background:url(../img/skill_active.png) no-repeat;}
+.contact_btn.active { background:url(../img/contact_active.png) no-repeat;}
+
+/*作品内容区*/
+.works { width:100%; height:100%; position:absolute; left:0; top:0; text-align:center;}
+.works ul { width:1260px; height:210px; margin:80px auto; position:relative;}
+.works li { width:200px; height:200px; background:#ccc; float:left; margin:5px; font-size:20px; font-weight:bold; text-align:center; line-height:200px; border-radius:10px; box-shadow:0 0 5px #fff; position:relative; overflow:hidden;}
+.works li span { width:200px; height:200px; background:#21cdff; opacity:0.6; filter:alpha(opacity:60); position:absolute; top:0; left:-200px; text-align:center; line-height:200px; border-radius:10px;}
+.works .btn { width:80px; height:40px; font-size:20px; border-radius:50%; cursor:pointer; position:relative; left:0; top:0;}
+
+/*技能内容区*/
+.skill { width:1140px; height:350px; position:absolute; left:50%; top:40px; margin-left:-570px;}
+.skill img { border:none; display:block; width:100%; height:100%;}
+.prev,.next { width:52px; height:52px; position:absolute; top:50%; margin-top:-26px; background:url(../img/btn.png) no-repeat;}
+.prev { left:-70px; background-position:left bottom;}
+.next { right:-70px; background-position:right bottom;}
+.prev:hover { left:-70px; background-position:left top;}
+.next:hover { right:-70px; background-position:right top;}
+.skill_con { width:1140px; height:350px; overflow:hidden;}
+.list { width:10000px; height:350px; position:relative; }
+.list li { width:240px; height:350px; position:absolute; left:447px; top:0;}
+.list_opa { position:absolute; left:0; top:0; right:0; bottom:0; background:#000; opacity:0.6; filter:alpha(opacity=60);}
+.text { position:absolute; left:0; right:0; bottom:0; padding:20px 10px; background:url(../img/float-bg.png) repeat; color:#fff;}
+.text h3 { font-size:20px; line-height:30px;}
+.text p { font-size:15px; line-height:30px; height:0; overflow:hidden;}
+.text p span { color:red; font-weight:bold;}
+.text p .qua_bar { display:block; width:0; height:30px; background:red;}
+
+
+/*联系我内容区*/
+.contact_box { width:726px; height:447px; position:absolute; left:50%; top:0; margin-left:-362px;}
+.contact { width:575px; height:300px; position:absolute; left:75px; top:68px; color:#fff;}
+.show_lt { width:37px; height:37px; background:url(../img/show_lt.png) no-repeat; position:absolute; left:0; top:0;}
+.show_rb { width:29px; height:37px; background:url(../img/show_rb.png) no-repeat; position:absolute; right:0; bottom:0;}
+.contact_con { position:relative;}
+.contact_con h3,.contact_con p { margin-left:120px;}
+.contact_con h3 { font-size:26px; line-height:130px;}
+.contact_con h3 strong { margin-right:50px;}
+.contact_con p { font-size:16px; line-height:40px;}
+.contact_opa { width:100%; height:100%; position:absolute; left:0; top:0; background:#26546d; opacity:0.6; filter:alpha(opacity=60);}
+/*爆炸边框*/
+.chip_bg { position:absolute; left:0; top:0; right:0; bottom:0;}
+.chip_bg span { position:absolute; background:url(../img/con_bg.png) no-repeat;}
+
+
+
+
+/*尾部*/
+.footer { text-align:center; line-height:30px; font-size:14px; color:#21cdff; padding:30px 0;}
+.footer p { height:30px;}
+.footer p span { transition:0.5s all ease;}
+.footer p span.on { color:#fff; text-shadow:0 0 30px #fff;
+ transform:scale(1.5);
+ -moz-transform:scale(1.5);
+ -ms-transform:scale(1.5);
+ -o-transform:scale(1.5);
+ -webkit-transform:scale(1.5);
+ }
+
+
+
+/*飞机*/
+.track { width:900px; height:600px; position:absolute; top:80px; left:50%; margin-left:-450px; display:block; border-radius:50%;}
+.airplane { width:70px; height:120px; background:url(../img/airplane1.png) no-repeat; position:absolute; left:50%; top:0; margin-left:-35px; margin-top:-58px; z-index:1000;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+}
+
+
+/*背景*/
+@keyframes mystars {
+	0% { background-position:0 0;}
+	100% { background-position:-10000px 5000px;}
+}
+@-webkit-keyframes mystars {
+	0% { background-position:0 0;}
+	100% { background-position:-10000px 5000px;}
+}
+@-o-keyframes mystars {
+	0% { background-position:0 0;}
+	100% { background-position:-10000px 5000px;}
+}
+@-moz-keyframes mystars {
+	0% { background-position:0 0;}
+	100% { background-position:-10000px 5000px;}
+}
+
+.bg, .stars, .twinkling { position:absolute; left:0; top:0; right:0; bottom:0; width:100%; height:100%; display:block;}
+.bg { background:url(../img/bg.png) repeat center;}
+.stars { background:url(../img/stars.png) repeat; z-index:-2;}
+.twinkling { background:url(../img/twinkling.png) repeat; z-index:-1;
+	animation:mystars 200s linear infinite;
+	-webkit-animation:mystars 200s linear infinite;
+	-o-animation:mystars 200s linear infinite;
+	-moz-animation:mystars 200s linear infinite;
+}
+
+
+
+
+@media screen and (min-height:749px){
+    body { height:100%; }
+	.myhome { width:100%; height:100%; position:relative; left:0; top:0; bottom:0; right:0;}
+/*	.con { margin:100px auto 0;}*/
+	.footer { padding:100px 0;}
+}
